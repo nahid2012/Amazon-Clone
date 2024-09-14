@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="boostrap/bootstrap.min.css">
     <script src="boostrap/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="product.css">
 </head>
 <body>
@@ -230,7 +229,7 @@
     </div>
 
     <div class="product-slider-price bg-white">
-        <h2>Deals under 25$</h2>
+        <h2>Related Products</h2>
 
         <div class="products">
             <div class="card">
@@ -338,5 +337,15 @@
         <img src="assets/amazon_logo.png" width="100" alt="amazon_logo">
         <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
     </footer>
+
+    <script>
+        const scrollcontainer = document.querySelectorAll(".products")
+        for (const item of scrollcontainer) {
+            item.addEventListener('wheel', (e) => {
+                e.preventDefault()
+                item.scrollLeft += e.deltaY
+            })
+        }
+    </script>
 </body>
 </html>
