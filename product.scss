@@ -16,7 +16,6 @@ body {
 
     .product-display {
         min-height: 100%;
-        padding: 10px 20px;
 
         .product-image {
             gap: 10px;
@@ -191,6 +190,36 @@ body {
                 display: flex;
                 align-items: center;
                 gap: 3px;
+            }
+
+            .product-stock {
+                margin: 15px 0px;
+                color: green;
+                font-weight: 400;
+            }
+
+            .product-quantity {
+                padding: 8px 5px;
+                outline: none;
+                width: 100%;
+                border-radius: 5px;
+                background: #efefef;
+                border-color: #c1c1c1;
+            }
+
+            .product-seller-info {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 4px;
+                font-size: 14px;
+                color: #565656;
+
+                p {
+                    span {
+                        color: #007185;
+                    }
+                }
             }
         }
     }

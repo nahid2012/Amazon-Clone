@@ -111,7 +111,6 @@ body .product-slider-price {
   margin-bottom: 15px;
 }
 body .product-slider-price .products {
-  display: grid;
   display: flex;
   overflow-x: auto;
   gap: 15px;
