@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit, sans-serif;
+}
+
+body nav {
+  background: #131921;
+  padding: 10px 20px;
+}
+body nav .location {
+  font-size: 13px;
+  color: #c4c4c4;
+}
+body nav .location h1 {
+  font-size: 14px;
+}
+body nav .search {
+  flex: 1;
+  max-width: 1000px;
+  border-radius: 4px;
+  margin-left: 15px;
+  color: gray;
+}
+body nav .search .search-category {
+  padding: 10px 20px;
+  gap: 5px;
+  background: #e5e5e5;
+  border: 4px 0 0 4px;
+}
+body nav .search .search-input {
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+}
+body nav .search .search-icon {
+  max-width: 41px;
+  padding: 8px;
+  background: #ffd64f;
+  border-radius: 0 4px 4px 0;
+}
+body nav .lang {
+  gap: 2px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+body nav .text {
+  margin-left: 15px;
+}
+body nav .text p {
+  font-size: 10px;
+}
+body nav .text h1 {
+  font-size: 14px;
+}
+body nav .cart {
+  margin: 0px 15px;
+}
+body .nav-bottom {
+  gap: 20px;
+  padding: 8px 20px;
+  background: #232f2e;
+  font-size: 15px;
+}
+body .nav-bottom div {
+  gap: 5px;
+  font-weight: 500;
+}
+body .header-img {
+  -webkit-mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+body .boxes .box {
+  margin-top: -20vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+body .boxes .box .card {
+  width: 20vw;
+  z-index: 1;
+}
+body .boxes .box .card img {
+  transition: all ease-in-out 0.3s;
+}
+body .boxes .box .card img:hover {
+  transform: scale(1.075);
+}
+body .product-slider {
+  margin: 0px 30px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+body .product-slider .products {
+  gap: 25px;
+  margin-top: 10px;
+}
+body .product-slider .products::-webkit-scrollbar {
+  display: none;
+}
+body .product-slider .products img {
+  max-width: 200px;
+  max-height: 200px;
+}
+body .product-slider-price {
+  margin: 10px 30px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+body .product-slider-price .products {
+  display: grid;
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  margin-top: 10px;
+}
+body .product-slider-price .products::-webkit-scrollbar {
+  display: none;
+}
+body .product-slider-price .products .card {
+  width: 17vw;
+  flex: 0 0 auto;
+}
+body .product-slider-price .products .card span {
+  font-weight: bold;
+}
+body footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: #131921;
+  padding: 20px 60px;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */
