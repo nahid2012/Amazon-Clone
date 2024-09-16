@@ -76,7 +76,7 @@ body .header-img {
 body .boxes .box {
   margin-top: -20vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
   gap: 10px;
 }
 body .boxes .box .card {
@@ -88,6 +88,22 @@ body .boxes .box .card img {
 }
 body .boxes .box .card img:hover {
   transform: scale(1.075);
+}
+@media (max-width: 991px) {
+  body .boxes .box {
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  }
+  body .boxes .box .card {
+    width: 30vw;
+  }
+}
+@media (max-width: 600px) {
+  body .boxes .box {
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  }
+  body .boxes .box .card {
+    width: 40vw;
+  }
 }
 body .product-slider {
   margin: 0px 30px;

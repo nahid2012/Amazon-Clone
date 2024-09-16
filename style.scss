@@ -93,21 +93,36 @@ body {
     .boxes {
         .box {
             margin-top: -20vw;
-    
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
             gap: 10px;
-    
+        
             .card {
                 width: 20vw;
                 z-index: 1;
-
+        
                 img {
                     transition: all ease-in-out 0.3s;
-
+        
                     &:hover {
                         transform: scale(1.075);
                     }
+                }
+            }
+
+            @media (max-width: 991px) {
+                grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+        
+                .card {
+                    width: 30vw;
+                }
+            }
+
+            @media (max-width: 600px) {
+                grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+        
+                .card {
+                    width: 40vw;
                 }
             }
         }
