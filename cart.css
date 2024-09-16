@@ -1,0 +1,53 @@
+body {
+  background-color: gray;
+  height: 10vh;
+}
+body .cart {
+  display: flex;
+  gap: 20px;
+}
+body .cart .cart-left {
+  background: white;
+  margin: 20px;
+  width: 80%;
+}
+body .cart .cart-left h1 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+body .cart .cart-left .product-cart-list img {
+  max-height: 200px;
+}
+body .cart .cart-left .product-cart-list .product-cart-titleprice {
+  margin-right: 25px;
+}
+body .cart .cart-left .product-cart-list .product-cart-titleprice p {
+  font-size: 18px;
+  font-weight: 500;
+}
+body .cart .cart-left .product-cart-list .component .work p {
+  cursor: pointer;
+  color: #1a35aa;
+}
+body .cart .cart-right {
+  background: white;
+  margin: 20px;
+  width: 20%;
+}
+body .cart .cart-right .total {
+  position: relative;
+  max-height: 500px;
+}
+body .cart .cart-right .total p {
+  font-size: 20px;
+  margin: 10px;
+}
+body .cart .cart-right .total button {
+  position: absolute;
+  right: 5%;
+  width: 90%;
+}
+body p {
+  margin-bottom: 0;
+}/*# sourceMappingURL=cart.css.map */
