@@ -99,7 +99,7 @@ body .boxes .box .card img:hover {
 }
 @media (max-width: 600px) {
   body .boxes .box {
-    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45vw, 1fr));
   }
   body .boxes .box .card {
     width: 40vw;
@@ -138,6 +138,11 @@ body .product-slider-price .products::-webkit-scrollbar {
 body .product-slider-price .products .card {
   width: 17vw;
   flex: 0 0 auto;
+}
+@media (max-width: 991px) {
+  body .product-slider-price .products .card {
+    width: 40vw;
+  }
 }
 body .product-slider-price .products .card span {
   font-weight: bold;
